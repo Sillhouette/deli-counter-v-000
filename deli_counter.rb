@@ -7,8 +7,10 @@ def line(katz_deli)
   if(katz_deli == [])
     puts "The line is currently empty."
   else
-    names = katz_deli.each_with_index { |name, index| "#{index + 1}. #{name}"};
-    puts names.join;
-    puts "The line is currently #{names}";
+    line = [];
+    katz_deli.each_with_index {|name, index| line.push("#{index + 1}. #{name}")};
+
+    puts line.join;
+    puts "The line is currently #{line.join()}";
   end
 end
