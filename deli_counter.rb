@@ -21,6 +21,9 @@ def take_a_number(katz_deli, name)
   katz_deli.push(name);
 end
 
+##
+# => #now_serving takes in the deli array, removes the first element and outputs who is currently being served
+#
 def now_serving(katz_deli)
   puts katz_deli.length == 0 ? "There is nobody waiting to be served!" : "Currently serving #{katz_deli.shift()}."
 end
