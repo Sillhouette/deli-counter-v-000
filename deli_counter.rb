@@ -13,11 +13,14 @@ def line(katz_deli)
   end
 end
 
+##
+# => #take_a_number takes in the deli array and a new name and adds it to the deli array
+##
 def take_a_number(katz_deli, name)
   puts "Welcome, #{name}. You are number #{katz_deli.length + 1} in line.";
   katz_deli.push(name);
 end
 
 def now_serving(katz_deli)
-puts katz_deli.length == 0 ? "There is nobody waiting to be served!" : "Currently serving #{katz_deli.shift()}."
+  puts katz_deli.length == 0 ? "There is nobody waiting to be served!" : "Currently serving #{katz_deli.shift()}."
 end
